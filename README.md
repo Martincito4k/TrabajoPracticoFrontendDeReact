@@ -53,17 +53,22 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado:
 2. **Navega al directorio del proyecto**:
 
     ```bash
-    cd TrabajoPracticoFrontendDeReact
+    cd TrabajoPracticoFrontendDeReact/
 
-3. **Instala las dependencias**:
+3. **Navega al directorio de Vite**:
+
+    ```bash
+    cd tp-react
+
+4. **Instala las dependencias**:
     ```bash
     npm install
 
-4. **Inicia la aplicación**:
+5. **Inicia la aplicación**:
     ```bash
     npm run dev
 
-5. **Abre en tu navegador**:
+6. **Abre en tu navegador**:
     Visita http://localhost:5173 para ver la aplicación.
 
 
