@@ -28,7 +28,3 @@ function App() {
 }
 
 export default App;
-
-//ToDo
-// Perfeccionar el Home / Inicio
-// Hacer algo con el footer y el header
