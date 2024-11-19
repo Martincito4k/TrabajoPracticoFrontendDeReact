@@ -48,7 +48,7 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tuUsuario/TrabajoPracticoFrontendDeReact.git
+   git clone https://github.com/Martincito4k/TrabajoPracticoFrontendDeReact.git
 
 2. **Navega al directorio del proyecto**:
 
@@ -65,6 +65,20 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado:
 
 5. **Abre en tu navegador**:
     Visita http://localhost:5173 para ver la aplicación.
+
+## 🔧 Backend utilizado:
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/CIU-UnaHur/tp-backend.git
+
+1. **Instala las dependencias**:
+    ```bash
+    npm install
+
+2. **Inicia la aplicación**:
+    ```bash
+    npm run dev
 
 
 ## 🧑‍💻 Autores
