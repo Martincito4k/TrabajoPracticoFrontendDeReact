@@ -36,7 +36,7 @@ Cart.propTypes = {
     selectedProducts: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
-            name: PropTypes.string, // No requerido, pero con fallback
+            name: PropTypes.stringisRequired,
             price: PropTypes.number.isRequired,
             quantity: PropTypes.number.isRequired,
         })

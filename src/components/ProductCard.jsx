@@ -27,7 +27,6 @@ const ProductCard = ({ product }) => {
   );
 };
 
-// Validación de props
 ProductCard.propTypes = {
   product: PropTypes.shape({
     name: PropTypes.string.isRequired,

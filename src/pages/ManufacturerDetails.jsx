@@ -14,7 +14,6 @@ const ManufacturerDetails = () => {
 
   if (!manufacturer) return <p>Cargando fabricante...</p>;
 
-  // Ruta de la imagen (similar a la lógica usada en productos)
   const imagePath = `/images/fabricantes/${manufacturer.pathImgPerfil?.split('/').pop() || 'no-image.jpg'}`;
 
   // Convertir las fechas a un formato más legible

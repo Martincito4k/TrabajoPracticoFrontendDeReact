@@ -46,10 +46,10 @@ const Catalog = () => {
   const calculateTotal = () => {
     const total = selectedProducts.reduce((sum, item) => {
       const subtotal = item.price && item.quantity ? item.price * item.quantity : 0;
-      console.log(`Subtotal para ${item.name}: ${subtotal}`); // Diagnóstico
+      console.log(`Subtotal para ${item.name}: ${subtotal}`);
       return sum + subtotal;
     }, 0);
-    console.log('Total calculado:', total); // Diagnóstico
+    console.log('Total calculado:', total);
     return total;
   };
 
@@ -85,7 +85,6 @@ const Catalog = () => {
         })}
       </div>
 
-      {/* Componente Carrito */}
       <Cart
         selectedProducts={selectedProducts}
         updateQuantity={updateQuantity}
