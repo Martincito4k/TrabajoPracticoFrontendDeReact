@@ -15,12 +15,18 @@ const ProductDetails = () => {
 
     fetch(`http://localhost:5000/productos/${id}/fabricantes`)
       .then((response) => response.json())
-      .then((data) => setManufacturers(data || []))
+      .then((data) => {
+        console.log('Fabricantes recibidos:', data); // Depuración
+        setManufacturers(data.Fabricantes || []);
+      })
       .catch((error) => console.error('Error al cargar fabricantes:', error));
 
     fetch(`http://localhost:5000/productos/${id}/componentes`)
       .then((response) => response.json())
-      .then((data) => setComponents(data || []))
+      .then((data) => {
+        console.log('Componentes recibidos:', data); // Depuración
+        setComponents(data.Componentes || []);
+      })
       .catch((error) => console.error('Error al cargar componentes:', error));
   }, [id]);
 
@@ -41,6 +47,7 @@ const ProductDetails = () => {
       </div>
       <p className="text-lg text-gray-700 mt-6 text-center">{product.descripcion}</p>
       <p className="text-lg text-gray-700 mt-6 font-semibold text-center">Precio: ${product.precio}</p>
+
       <div className="mt-8 w-full max-w-4xl">
         <h2 className="text-gray-700 text-2xl font-bold mb-4">Fabricantes</h2>
         <ul className="list-disc pl-6 mb-6">
